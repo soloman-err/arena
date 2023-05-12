@@ -28,8 +28,18 @@ const Navbar = () => {
         </div>
 
         <div className="space-x-2">
-          <button className="border px-2">login</button>
-          <button className="border px-2">Register</button>
+          <button
+            type="submit"
+            className="border font-bold px-2 rounded hover:bg-zinc-600"
+          >
+            login
+          </button>
+          <button
+            type="submit"
+            className="border font-bold px-2 rounded hover:bg-zinc-600"
+          >
+            Register
+          </button>
         </div>
       </div>
 

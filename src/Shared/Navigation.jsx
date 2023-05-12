@@ -10,11 +10,21 @@ const Navigation = () => {
         <li className="border-b px-2 border-zinc-800 hover:bg-zinc-700 shadow-lg">
           Home
         </li>
-        <li>Community</li>
-        <li>Download</li>
-        <li>Customize</li>
-        <li>About</li>
-        <li>Support</li>
+        <li className="border-b px-2 border-zinc-800 hover:bg-zinc-700 shadow-lg">
+          Community
+        </li>
+        <li className="border-b px-2 border-zinc-800 hover:bg-zinc-700 shadow-lg">
+          Download
+        </li>
+        <li className="border-b px-2 border-zinc-800 hover:bg-zinc-700 shadow-lg">
+          Customize
+        </li>
+        <li className="border-b px-2 border-zinc-800 hover:bg-zinc-700 shadow-lg">
+          About
+        </li>
+        <li className="border-b px-2 border-zinc-800 hover:bg-zinc-700 shadow-lg">
+          Support
+        </li>
       </ul>
       <div className="flex gap-2">
         <input
