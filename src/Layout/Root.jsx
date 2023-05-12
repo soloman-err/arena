@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "../Shared/Navbar";
+import Header from "../Shared/Header";
 import Home from "../Pages/Home/Home";
 import Footer from "../Shared/Footer";
 
 const Root = () => {
   return (
     <div className="flex flex-col h-screen">
-      <Navbar />
+      <Header />
       <Home />
       <Footer />
     </div>
