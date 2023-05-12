@@ -7,13 +7,13 @@ const Navbar = () => {
       {/* Title */}
       <div className="flex items-center justify-between border-b border-zinc-800 shadow-lg mb-2">
         <div>
-          <h2 className="text-[#93BFCF] text-2xl lg:text-3xl">
+          <h2 className="text-[#93BFCF] text-2xl font-bold lg:text-3xl">
             <span className="font-bold">a</span>rena
             <span className="font-bold">.</span>
           </h2>
         </div>
 
-        <div className="lg:hidden flex gap-2">
+        <div className="hidden md:static lg:hidden md:flex gap-2">
           <input
             type="search"
             placeholder="Search"
@@ -30,13 +30,14 @@ const Navbar = () => {
         <div className="space-x-2">
           <button
             type="submit"
-            className="border font-bold px-2 rounded hover:bg-zinc-600"
+            className="border text-xs md:text-sm
+             font-bold px-2 rounded hover:bg-zinc-600"
           >
             login
           </button>
           <button
             type="submit"
-            className="border font-bold px-2 rounded hover:bg-zinc-600"
+            className="border text-xs md:text-sm font-bold px-2 rounded hover:bg-zinc-600"
           >
             Register
           </button>

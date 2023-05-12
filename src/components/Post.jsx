@@ -1,9 +1,18 @@
 import React from "react";
-import { FaHeart, FaLinkedin, FaThumbsUp } from "react-icons/fa";
+import {
+  FaComment,
+  FaExclamation,
+  FaHeart,
+  FaLinkedin,
+  FaRegHandPointer,
+  FaShare,
+  FaThumbsUp,
+  FaWatchmanMonitoring,
+} from "react-icons/fa";
 
 const Post = () => {
   return (
-    <div className="border rounded p-2">
+    <div className="border border-zinc-500 shadow-md rounded p-2">
       <div className="flex flex-col">
         <div className="flex gap-2 border-b border-zinc-600">
           <img
@@ -31,9 +40,25 @@ const Post = () => {
           <span className="bg-zinc-800 p-1 rounded-xl">NextJs</span>
           <span className="bg-zinc-800 p-1 rounded-xl">Laravel</span>
         </div>
-        <div className="mt-5 flex gap-2 text-sm items-center">
-          <FaThumbsUp className="text-[#6ab4cf]" />
-          <span>5likes</span>
+
+        {/* Post footer */}
+        <div className="flex items-center justify-between bg-zinc-800 py-1 rounded-xl px-5 mt-5 text-sm">
+          <div className="flex gap-1">
+            <FaThumbsUp className="text-[#6ab4cf]" />
+            <span>5likes</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <FaComment className="text-[#6ab4cf]" />
+            <span>comment</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <FaShare className="text-[#6ab4cf]" />
+            <span>Share</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <FaExclamation className="bg-[#6ab4cf] text-black p-1 rounded-full" />
+            <span>Report</span>
+          </div>
         </div>
       </div>
     </div>
