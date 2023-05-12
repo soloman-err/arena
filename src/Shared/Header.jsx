@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -28,19 +29,23 @@ const Navbar = () => {
         </div>
 
         <div className="space-x-2">
-          <button
-            type="submit"
-            className="border text-xs md:text-sm
+          <Link to="login">
+            <button
+              type="submit"
+              className="border text-xs md:text-sm
              font-bold px-2 rounded hover:bg-zinc-600"
-          >
-            login
-          </button>
-          <button
-            type="submit"
-            className="border text-xs md:text-sm font-bold px-2 rounded hover:bg-zinc-600"
-          >
-            Register
-          </button>
+            >
+              login
+            </button>
+          </Link>
+          <Link to="/register">
+            <button
+              type="submit"
+              className="border text-xs md:text-sm font-bold px-2 rounded hover:bg-zinc-600"
+            >
+              Register
+            </button>
+          </Link>
         </div>
       </div>
 
