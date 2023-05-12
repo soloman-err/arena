@@ -5,9 +5,9 @@ import Footer from "../Shared/Footer";
 
 const Root = () => {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <Navbar />
-      {/* <Home /> */}
+      <Home />
       <Footer />
     </div>
   );
